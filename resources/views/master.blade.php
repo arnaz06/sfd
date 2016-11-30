@@ -15,7 +15,9 @@
 
     {!! Html::style('vendor-workshop/bootstrap/css/bootstrap.min.css') !!}
     <!-- Bootstrap external -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    {{--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">--}}
+    {{--sing anyar nggo chrome--}}
+    {!! Html::style('css-workshop/chrome.bootstrap.min.css') !!}
     <!-- Custom Fonts -->
     {!! Html::style('vendor-workshop/font-awesome/css/font-awesome.min.css') !!}
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
