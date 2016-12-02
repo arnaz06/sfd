@@ -56,6 +56,6 @@ tapi tidak masuk content -->
 </section>
     </form>
     @else
-    <h2>Mohon maaf kursi sudah penuh, mohon antri hingga codehours 2017 :*<h2>
-
+    <h2>Mohon maaf kursi sudah penuh, mohon antri hingga codehours 2017 :*</h2>
+@endif
 @endsection
