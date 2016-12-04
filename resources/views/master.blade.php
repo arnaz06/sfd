@@ -52,7 +52,7 @@
     </style>
 </head>
 
-
+@yield('content')
 @yield('home')
 @yield('daftar')
 <footer id="footer">

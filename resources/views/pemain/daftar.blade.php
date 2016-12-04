@@ -29,22 +29,22 @@
         <input type="hidden" name="_token" value="{{ csrf_token() }}">
       </div>
       <div class="input-field">
-        <input id="nama"  value="{{old('nama')}}" type="text" required>
+        <input id="nama"  value="{{old('nama')}}" type="text" name="nama" required>
         <label for="nama">nama</label>
       </div>
       <div class="input-field">
-        <input id="username" value= "{{ old('username')}}" type="text" class="validate" required>
+        <input id="username" value= "{{ old('username')}}" type="text" name="username" class="validate" required>
         <label for="username">username</label>
       </div>
       <div class="input-field">
-        <input id="email" required="required" value="{{old('email')}}" type="email" class="validate">
+        <input id="email" required="required" value="{{old('email')}}" name="email" type="email" class="validate">
         <label for="email">email</label>
       </div>
       <div class="input-field">
-        <input id="no_hp" required="required" value="{{old('no_hp')}}" type="text" class="validate">
+        <input id="no_hp" required="required" value="{{old('no_hp')}}" name="no_hp" type="text" class="validate">
         <label for="no_hp">no hp</label>
       </div>
-      <button class="btn warnaku waves-effect waves-light" type="submit" name="action">Submit
+      <button class="btn warnaku waves-effect waves-light" type="submit"  name="action">Submit
         <i class="material-icons right">send</i>
       </button>
       <!-- <input type="submit" name='publish'  value = "Publish"/> -->
@@ -52,21 +52,19 @@
 
   </div>
 
-
   <footer class="page-footer warnaku">
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
           <h5 class="white-text">Footer Content</h5>
-          <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+
         </div>
         <div class="col l4 offset-l2 s12">
-          <h5 class="white-text">Links</h5>
+          <h5 class="white-text"></h5>
           <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://twitter.com/doscomedia">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/doscomedia/">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/doscomedia/">Instagram</a></li>
           </ul>
         </div>
       </div>

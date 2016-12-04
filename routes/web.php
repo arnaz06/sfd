@@ -5,6 +5,9 @@ Route::post('/cari','CodehoursController@searchpost');
 Route::post('/cari-save','CodehoursController@updateconfirmed');
 //pemain
 Route::get('/daftar-mampir','PemainController@index');
+Route::get('/tambah-point','PemainController@tambahpoint');
+Route::post('/tambah-point','PemainController@tambahpointpost');
+Route::post('tambahpoint-save','PemainController@tambahpointsave');
 Route::post('/daftar-mampir','PemainController@store');
 Route::get('/edit/{id}','PemainController@edit');
 Route::post('/edit','PemainController@update');

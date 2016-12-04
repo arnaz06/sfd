@@ -31,7 +31,7 @@ class CodehoursController extends Controller
 
     /**
      * Store a newly created resource in storage.
-     *
+     *1
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */

@@ -46,7 +46,36 @@ class PemainController extends Controller
         $Pemain->score = 0;
         $Pemain->save();
 
-        return redirect('/lihat-pemain');
+        $data = $Pemain->kode;
+        return view('pemain.terimakasih')->withData($data);
+
+    }
+
+    public function tambahpoint(){
+        return view('pemain.tambahpoint');
+    }
+    public function tambahpointpost(Request $request){
+
+        $query = $request->get('query');
+        $cari = Pemains::where('kode','LIKE','%'.$query.'%')->get();
+
+        return view('pemain.hasil',['cari' => $cari]);
+
+    }
+    public function tambahpointsave(Request $request){
+        $id = $request->input('id');
+        $Pemain = Pemains::find($id);
+        $Pemain->nama = $request->input('nama');
+        $Pemain->username = $request->input('username');
+        $Pemain->kode = $request->input('kode');
+        $Pemain->email = $request->input('email');
+        $Pemain->no_hp = $request->input('no_hp');
+        $Pemain->score =$request->input('score') + $Pemain->score();
+        $Pemain->save();
+
+
+        return view('pemain.tambahpoint');
+
 
     }
 

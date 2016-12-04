@@ -24,6 +24,7 @@
         <th>Email</th>
         <th>Kode</th>
         <th>Score</th>
+        <th>Edit</th>
       </tr>
 
     </thead>
@@ -36,6 +37,7 @@
           <td>{{$pemain->email}}</td>
           <td>{{$pemain->kode}}</td>
           <td>{{$pemain->score}}</td>
+          <td><a href="/edit/{{$pemain->id}}">Edit</a></td>
         </tr>
       </tbody>
     @endforeach
