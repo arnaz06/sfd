@@ -198,11 +198,12 @@
 
                 <div id="daftar" class="row text-center">
                     <div class="col-lg-12">
-                        <h3>DAFTAR WORKSHOP</h3>
+                        <h3>DAFTAR WORKSHOP & DAFTAR GAMIFICATION</h3>
+
                     </div>
                     <div class="col-lg-12">
                         <a href="/daftar-codehours" class="btn btn-xl">Daftar Workshop</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                        <!--a href="#" class="btn btn-xl">Daftar Gamification</a-->
+                        <a href="/daftar-mampir" class="btn btn-xl">Daftar Gamification</a>
                     </div>
                 </div>
             </div>
