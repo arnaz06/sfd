@@ -78,6 +78,14 @@ class PemainController extends Controller
 
 
     }
+    public function resetpoint(Request $request,$id){
+
+        $reset = Pemains::find($id);
+        $reset->score =0;
+        $reset->save();
+        $pemains = Pemains::all();
+        return redirect('lihat-pemain');
+    }
 
     /**
      * Display the specified resource.
