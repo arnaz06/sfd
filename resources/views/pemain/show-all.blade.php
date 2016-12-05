@@ -26,6 +26,7 @@
         <th>Score</th>
         <th>Edit</th>
         <th>Reset Point</th>
+        <th>Hapus</th>
       </tr>
 
     </thead>
@@ -40,6 +41,7 @@
           <td>{{$pemain->score}}</td>
           <td><a href="/edit/{{$pemain->id}}">Edit</a></td>
           <td><a href="/reset-point/{{$pemain->id}}">reset</a></td>
+          <td><a href="/hapus/{{$pemain->id}}">Hapus</a></td>
         </tr>
       </tbody>
     @endforeach
