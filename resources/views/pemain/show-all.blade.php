@@ -25,6 +25,7 @@
         <th>Kode</th>
         <th>Score</th>
         <th>Edit</th>
+        <th>Kurang Point</th>
         <th>Reset Point</th>
         <th>Hapus</th>
       </tr>
@@ -40,8 +41,10 @@
           <td>{{$pemain->kode}}</td>
           <td>{{$pemain->score}}</td>
           <td><a href="/edit/{{$pemain->id}}">Edit</a></td>
+          <td><a href="/kurang-point/{{$pemain->id}}">Kurang Point</a></td>
           <td><a href="/reset-point/{{$pemain->id}}">reset</a></td>
           <td><a href="/hapus/{{$pemain->id}}">Hapus</a></td>
+
         </tr>
       </tbody>
     @endforeach

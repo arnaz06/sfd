@@ -8,6 +8,8 @@ Route::get('/daftar-mampir','PemainController@index');
 Route::get('/tambah-point','PemainController@tambahpoint');
 Route::post('/tambah-point','PemainController@tambahpointpost');
 Route::post('tambahpoint-save','PemainController@tambahpointsave');
+Route::get('/kurang-point/{id}','PemainController@kurangpoint');
+Route::post('kurang-point','PemainController@kurangpointsave');
 Route::get('/reset-point/{id}','PemainController@resetpoint');
 Route::post('/daftar-mampir','PemainController@store');
 Route::get('/edit/{id}','PemainController@edit');

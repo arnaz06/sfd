@@ -78,6 +78,23 @@ class PemainController extends Controller
 
 
     }
+    public function kurangpoint($id){
+        $pemain = Pemains::find($id);
+        return view ('pemain.kurangpoint')->withPemain($pemain);
+    }
+    public function kurangpointsave(Request $request){
+        $id = $request->input('id');
+        $pemain = Pemains::find($id);
+        $pemain->nama = $request->input('nama');
+        $pemain->username = $request->input('username');
+        $pemain->kode = $request->input('kode');
+        $pemain->email = $request->input('email');
+        $pemain->no_hp = $request->input('no_hp');
+        $pemain->score = $pemain->score() - $request->input('score');
+        $pemain->save();
+        return redirect('/lihat-pemain');
+
+    }
     public function resetpoint(Request $request,$id){
 
         $reset = Pemains::find($id);
@@ -142,6 +159,8 @@ class PemainController extends Controller
         return redirect('lihat-pemain');
 
     }
+
+
 
     /**
      * Remove the specified resource from storage.
